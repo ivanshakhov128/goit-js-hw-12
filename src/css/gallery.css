@@ -1,0 +1,137 @@
+.load-more {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 125px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.load-more:hover {
+  background-color: #6c8cff;
+}
+
+.load-more.active {
+  display: block;
+}
+
+.loader {
+  display: none;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #ccc;
+  border-top-color: #1d72b8;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  margin: 20px auto;
+}
+.loader.active {
+  display: block;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  border: 1px solid #808080;
+  border-radius: 8px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.gallery-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8px;
+}
+.info p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+}
+
+.label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 8px;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #6c8cff;
+}
+.inp {
+  border-radius: 4px;
+  width: 272px;
+  height: 40px;
+  outline: none;
+  border: 1px solid #808080;
+}
+
+.inp:hover {
+  border: 1px solid #000;
+}
+.inp:focus {
+  border: 1px solid #4e75ff;
+}
